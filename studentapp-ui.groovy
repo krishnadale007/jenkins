@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Pull') {
             steps {
-                git credentialsId: 'chetansomkuwar254', url: 'https://github.com/chetansomkuwar254/studentapp.ui.git'
+                git credentialsId: 'chetansomkuwar254', url: 'https://github.com/krishnadale007/jenkins.git'
                 echo 'Hello World'
             }
         }
