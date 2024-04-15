@@ -1,18 +1,24 @@
-pipeline{
+pipeline {
     agent any
-    {
-        stages{
-            stage('pull'){
-                steps{
-                    echo 'pull is done'
-                }
+    stages {
+        stage('pull') {
+            steps {
+                echo 'pull done'
             }
-            stages{
-                stage('build'){
-                    steps{
-                        echo 'build is done'
-                    }
-                }
+        }
+        stage('build') {
+            steps {
+                echo 'build done'
+            }
+        }
+        stage('test') {
+            steps {
+                echo 'test done'
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo 'deploy done'
             }
         }
     }
